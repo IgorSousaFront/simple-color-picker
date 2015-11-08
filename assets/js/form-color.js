@@ -7,20 +7,21 @@ $(document).ready(function(){
 
 
 		$('.box-color').css('background-color', getColor);
-		console.log(1);
 		$('.setColor').val(setColor);
 
 		if (colorLength > 15){
-			console.log(2);
 			var red = setColor.substring(4, 7);
+			console.log(red);
 			var redBox = 'rgb(' + red + ",000,000)";
 			$('.red').css('background-color', redBox);
 
-			var green = setColor.substring(8, 11);
+			var green = setColor.substring(9, 12);
+			console.log(green);
 			var greenBox = 'rgb(000,' + green + ",000)";
 			$('.green').css('background-color', greenBox);
 
-			var blue = setColor.substring(4, 7);
+			var blue = setColor.substring(14, 17);
+			console.log(blue);
 			var blueBox = 'rgb(000,000,' + blue + ")";
 			$('.blue').css('background-color', blueBox);
 		};
