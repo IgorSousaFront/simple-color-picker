@@ -51,6 +51,37 @@
 	margin-bottom: 0;
 }
 
+.content form input, .content form a{
+	border: 1px solid #ccc;
+	padding: 8px 8px;
+	height: 50px;
+	width: 100%;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.content form input:focus{
+	outline: none;
+	border: 1px solid #7f8c8d;
+}
+
+.content form .getColor{
+	width: 75%;
+	display: inline-block;
+}
+
+.content label{
+	display: block;
+}
+
+.content .button{
+	cursor: pointer;
+	display: inline-block;
+	width: 23%;
+	padding: 15px;
+	vertical-align: -webkit-baseline-middle;
+}
+
 .color-box-3{
 	text-align: center;
 }
@@ -80,18 +111,4 @@
     text-transform: uppercase;
     font-size: 20px;
     text-align: left;
-}
-
-.content form input{
-	border: 1px solid #ccc;
-	padding: 8px 8px;
-	height: 50px;
-	width: 100%;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-
-.content form input:focus{
-	outline: none;
-	border: 1px solid #7f8c8d;
 }

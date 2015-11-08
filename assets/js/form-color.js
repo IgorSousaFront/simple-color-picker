@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.getColor').keyup(function(){
+	$('.button').click(function(){
 		var getColor     = $('.getColor').val();
 		var setColor     = $('.box-color').css('background-color');
 		var colorLength  = setColor.length;
@@ -7,9 +7,11 @@ $(document).ready(function(){
 
 
 		$('.box-color').css('background-color', getColor);
+		console.log(1);
 		$('.setColor').val(setColor);
 
 		if (colorLength > 15){
+			console.log(2);
 			var red = setColor.substring(4, 7);
 			var redBox = 'rgb(' + red + ",000,000)";
 			$('.red').css('background-color', redBox);
