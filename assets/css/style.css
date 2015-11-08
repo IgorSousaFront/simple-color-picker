@@ -68,10 +68,18 @@
     display: none;
 }
 
-.content .result{
-	background-color: transparent;
-	width: 31.55%;
-	display: inline-block;
+.result-content .result{
+	background-color: #fff;
+	width: 100%;
+	height: 50px;
+	padding: 6px;
+	margin: 0 auto 10px;
+}
+
+.result-content p{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
 }
 
 .content form input{
